@@ -1,0 +1,928 @@
+
+    body {
+    margin: 0;
+    padding: 0; 
+    background-image: url('img/bgschool.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat; 
+    height: 10vh; 
+    font-family: Arial, sans-serif;
+    color: #fff;
+    }
+    
+    .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; 
+    background-color: #4a5a78;
+    }
+    
+    .header-logo {
+    display: flex;
+    align-items: center;
+    }
+    
+    .header-logo img {
+    height: 70px; 
+    margin-right: 10px;
+    }
+    
+    .header-buttons .btn {
+    margin-left: 10px;
+    padding: 12px 25px; 
+    background-color: #7389ae;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    }
+    
+    .nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #394b6a;
+    }
+    
+    .nav ul li {
+    margin: 0 10px;
+    }
+    
+    .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    }
+    
+    .main-content {
+    padding: 20px;
+    }
+    
+    /*Убрать полосу прокрутки у элемента*/
+  .element::-webkit-scrollbar {
+  width: 0;
+}
+
+/*Убрать полосу прокрутки для всей страницы*/
+  ::-webkit-scrollbar {
+  width: 0;
+}
+
+    .welcome2 {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    }
+    
+    .welcome2 img {
+    width: 20%; 
+    border-radius: 15px;
+    }
+    
+    .welcome2-text {
+    background-color: #4b5b77;
+    padding: 20px; 
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 1rem; 
+    }
+    
+    .welcome2-text h1 {
+    font-size: 1.5rem; 
+    }
+    
+    /* Секция результатов */
+    .results {
+        background: rgba(255, 255, 255, 0.3); /* Прозрачный фон */
+        padding: 20px;
+        border-radius: 20px;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 1200px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px); /* Размытие фона */
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Заголовок с закруглением */
+        .results-header {
+        background-color: #a1c4ff; /* Цвет фона заголовка */
+        border-radius: 30px;
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+        }
+        
+        .results-header h2 {
+        font-size: 24px;
+        color: #333;
+        margin: 0;
+        }
+        
+        /* Контейнер для текста и изображения */
+        .results-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        }
+        
+        /* Текстовые результаты */
+        .results-text {
+        flex: 1;
+        background: #a5badb; /* Прозрачный белый фон */
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        color: #333;
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 600px;
+        }
+        
+        /* Ряд для результата */
+        .result-row {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        }
+        
+        /* Круглый элемент с цифрой */
+        .result-circle {
+        width: 50px;
+        height: 50px;
+        background: #4a90e2;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Описание результата */
+        .result-row p {
+        margin: 0;
+        font-size: 16px;
+        color: #333;
+        }
+        
+        /* Изображение */
+        .results-image {
+        flex: 1;
+        text-align: center;
+        }
+        
+        .results-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+    /* Общий стиль футера */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4a5a78; /* Тёмно-синий фон */
+    color: #fff;
+    padding: 20px 40px;
+  }
+  
+  /* Левая колонка */
+  .footer-left {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-left p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .footer-left .vk-logo {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Центральная колонка */
+  .footer-center {
+    flex: 2;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .footer-center p {
+    margin: 0;
+  }
+  
+  /* Правая колонка */
+  .footer-right {
+    flex: 1;
+    text-align: right;
+    font-size: 16px;
+  }
+  
+  .footer-right p {
+    margin: 5px 0;
+  }
+  
+  
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      margin-bottom: 5px;
+    }
+  
+    .footer-left .vk-logo {
+      margin: 10px auto 0;
+    }
+  
+    .footer-right {
+      text-align: right;
+    }
+
+    /* О школе */
+.about-school {
+    display: flex;
+    gap: 20px;
+    margin: 40px;
+    }
+    
+    .school-photo img {
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .school-goal {
+    flex: 1;
+    background: #4b5b77;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .school-goal h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    padding-right: 1300px;
+    }
+    
+    .school-goal p {
+    line-height: 1.6;
+    }
+    
+    /* Учителя */
+    /* Секция "Наши учителя" */
+    .teachers-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4); /* Прозрачный фон */
+    padding: 60px;
+    border-radius: 20px; /* Закругленные углы */
+    margin: 20px auto;
+    max-width: 930px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .teacher-card {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    }
+    
+    .teacher-card img {
+    width: 175px;
+    height: 200px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    }
+    
+    .teacher-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    }
+    
+    .teacher-position {
+    font-size: 14px;
+    color: #dcdcdc;
+    }
+
+    .teacher-h2 {
+      font-size: 35px;
+        margin-bottom: 40px;
+        text-align: center;
+        color: white;
+    }
+
+    /* Центрирование контента и стили секций */
+.parents-section, .events-section, .advice-section, .feedback-section {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 900px;
+  }
+  
+  /* Стили для заголовков с боковыми линиями */
+  h2, h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .line {
+    flex: 1;
+    height: 2px;
+    background-color: white;
+  }
+  
+  /* Кнопка "Предстоящее событие" */
+  .event-button-container {
+    margin-left: 10px;
+  }
+  
+  .event-button {
+    margin-top: 23px;
+    padding: 25px 35px;
+    background-color: rgba(126, 153, 198, 0.8);
+    border: 2px solid rgba(126, 153, 198);
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .event-button:hover {
+    background-color: rgba(126, 153, 198);
+    color: #333;
+    transition: 0.3s ease;
+  }
+  
+  /* Стили для списка */
+  .advice-section ol {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    padding-left: 20px;
+  }
+  
+  .advice-section ol li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  .event-text-left {
+    text-align: left;
+    max-width: 800px;
+  }
+
+  .schedule-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .schedule-header h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .class-date {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .schedule-row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .day-block {
+    width: 200px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 0 15px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .day-title {
+    background: #007BFF;
+    color: #fff;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+  
+  .lesson {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+  }
+  
+  .lesson-number {
+    font-weight: bold;
+  }
+  
+  .cabinet {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .schedule-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 20px;
+  }
+  
+  .nav-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #007BFF;
+    color: #fff;
+    cursor: pointer;
+  }
+
+/* Основной контент */
+.eventz-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pagez-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Стили мероприятий */
+.eventz {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.eventz-icon {
+  position: absolute;
+  top: 10px;
+  left: -40px; /* Сдвиг влево */
+  transform: rotate(-10deg); /* Поворот */
+  background: #3b5a8c;
+  border-radius: 15px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.calendarz-icon {
+  width: 80px;
+  height: 80px;
+  background: #3b5a8c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.calendarz-date {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.eventz-info {
+  margin-left: 80px; /* Отступ, чтобы текст не заходил за иконку */
+  z-index: 2;
+}
+
+.eventz-title {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #fff;
+}
+
+.eventz-description {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.eventz-button {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ff6b00;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.eventz-button:hover {
+  background: #ff8b33;
+}
+
+/* Общие стили для страницы */
+.contacts-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.page-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Контент блоков */
+.contacts-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+/* Левый блок с картинкой */
+.contacts-image {
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.contacts-image img {
+  width: 445px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Правый блок с текстом */
+.contacts-info {
+  text-align: left;
+  max-width: 400px;
+  color: #fff;
+}
+
+.working-hours-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.working-hours {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Нижний блок */
+.contacts-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 70px;
+}
+
+/* Левый блок с текстом в футере */
+.contact-details {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 400px;
+  text-align: left;
+}
+
+/* Правый блок с картинкой в футере */
+.contacts-footer-image {
+  max-width: 250px;
+  margin-left: 20px;
+}
+
+.contacts-footer-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.news-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #3a4f6b;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Заголовок вне слайдера */
+.news-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 65px;
+  color: #ffffff;
+}
+
+/* Основной контейнер слайдера */
+.news-slider {
+  margin-bottom: 194px;
+  height: 400px; /* Увеличенная высота контейнера */
+  width: 99.9%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #f9f9f9;
+  position: relative;
+  overflow-y: scroll; /* Прокрутка остаётся активной */
+}
+
+/* Стили для каждого слайда */
+.news-slide {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  scroll-snap-align: start; /* Плавная остановка на слайде */
+  border-bottom: 1px solid #ddd;
+  background: #9eb2d3;
+  transition: transform 0.6s ease;
+}
+
+/* Картинка новости */
+.news-image {
+  flex: 0 0 120px;
+  height: 120px;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Содержимое новости */
+.news-content {
+  flex: 1;
+}
+
+/* Заголовок и дата новости */
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.news-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.news-date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Основной текст */
+.news-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Модальное окно скрыто по умолчанию */
+.modal-overlay {
+  display: none; /* Изначально скрыто */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Прозрачный фон */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Начальная прозрачность */
+  transition: opacity 0.5s ease; /* Плавное затемнение */
+}
+
+/* Активное состояние модального фона */
+.modal-overlay.active {
+  opacity: 1; /* Полностью непрозрачный */
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Модальное окно */
+.modal-window {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 13px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transform: translateY(-100px); /* Уезжает вверх */
+  opacity: 0; /* Начальная прозрачность */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Плавная анимация */
+
+  /* Добавляем размеры */
+  width: 60%; /* Ширина окна относительно экрана */
+  max-width: 600px; /* Максимальная ширина для больших экранов */
+}
+
+/* Активное состояние окна */
+.modal-window.active {
+  transform: translateY(0); /* Возвращается в центр */
+  opacity: 1; /* Появляется */
+}
+
+.modal-title {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-subtitle {
+  color: black;
+}
+
+.modal-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+}
+
+.modal-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.blue-btn {
+  background-color: #2a95ff;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.orange-btn {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+.boldindextext {
+  font-size: 100px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.boldabouttext {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.school_main_photo {
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.class_number {
+    margin-top: 10px;
+    padding: 11px 38px;
+    background-color: rgba(255, 255, 255, 0.89);
+    border: 2px solid rgba(0, 0, 0, 0.815);
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+/* Основные стили для окна */
+.class-selector {
+  position: fixed;
+  top: -100%; /* Изначально скрыто */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: top 0.5s ease, opacity 0.5s ease;
+  opacity: 0; /* Прозрачность */
+  z-index: 1001; /* Выше, чем затемнение */
+}
+
+/* Затемнение фона */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1000; /* Под окном */
+}
+
+/* Кнопки в окне */
+.class-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  font-size: 18px;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.class-btn:hover {
+  background: #f0f0f0;
+}
+
+/* Плавное появление окна */
+.class-selector.visible {
+  top: 20%; /* Появляется сверху */
+  opacity: 1;
+}
+
+/* Плавное появление затемнения */
+#overlay.visible {
+  opacity: 1;
+}
+
+/* Скрытый класс */
+.hidden {
+  display: none;
+}
+
+.choice_class {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #000;
+}
+.class_number:hover {
+  background: #ffffff91;
+}
+

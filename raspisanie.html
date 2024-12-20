@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>МБОУ СОШ №3 г. Канск</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МБОУ СОШ №3 г. Канск</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <script src="script.js"></script>
-<header class="header">
-<div class="header-logo">
-<a href="index.html">
-<img src="img/logo.png.png" alt="Логотип школы">
-</a>
-<span><b>МБОУ Средняя Общеобразовательная Школа №3</b>
-<br>г. Канск, Красноярский край</span>
+    <header class="header">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/logo.png.png" alt="Логотип школы">
+            </a>
+            <span><b>МБОУ Средняя Общеобразовательная Школа №3</b> <br>г. Канск, Красноярский край</span>
+        </div>
+        <div class="header-buttons">
+            <button id="open-login" class="btn">Вход</button>
+            <button id="open-register" class="btn">Регистрация</button>
+        </div>
+    </header>
+
+    <!-- Затемнение фона -->
+    <div id="overlay"></div>
+
+    <!-- Форма входа -->
+    <div id="login-form" class="form-window">
+        <h2 class="reg-log-text"><b>ВОЙТИ</b></h2>
+        <p class="reg-log-subtext">через социальные сети</p>
+        <!-- Социальные кнопки в форме регистрации -->
+<div class="social-buttons">
+    <a href="#"><img class="social-icon" src="img/gosuslugi.png.png" alt="Госуслуги"></a>
+    <a href="#"><img class="social-icon" src="img/odnoklassniki.png.png" alt="Одноклассники"></a>
+    <a href="#"><img class="social-icon" src="img/vkontake-log-reg.png.png" alt="ВКонтакте"></a>
+    <p class="reg-log-subtext">с паролем</p>
 </div>
-<div class="header-buttons">
-<button class="btn">Вход</button>
-<button class="btn">Регистрация</button>
+        <input class="form-input" type="email" placeholder="Электронная почта">
+        <input class="form-input" type="password" placeholder="Пароль">
+        <button class="form-btn"><b>Вход</b></button>
+    </div>
+
+    <!-- Форма регистрации -->
+    <div id="register-form" class="form-window">
+        <h2 class="reg-log-text"><b>ЗАРЕГИСТРИРОВАТЬСЯ</b></h2>
+        <p class="reg-log-subtext">через социальные сети</p>
+        <!-- Социальные кнопки в форме регистрации -->
+<div class="social-buttons">
+    <a href="#"><img class="social-icon" src="img/gosuslugi.png.png" alt="Госуслуги"></a>
+    <a href="#"><img class="social-icon" src="img/odnoklassniki.png.png" alt="Одноклассники"></a>
+    <a href="#"><img class="social-icon" src="img/vkontake-log-reg.png.png" alt="ВКонтакте"></a>
+    <p class="reg-log-subtext">с паролем</p>
 </div>
-</header>
+        <input class="form-input" type="email" placeholder="Электронная почта">
+        <input class="form-input" type="password" placeholder="Пароль">
+        <input class="form-input" type="password" placeholder="Подтвердите пароль">
+        <button class="form-btn2"><b>Регистрация</b></button>
+    </div>
+    <script src="script2.js"></script>
 
 <nav class="nav">
     <ul>
@@ -51,6 +87,7 @@
             .date {
                 font-size: 18px;
                 margin-bottom: 20px;
+                font-family: cursive;
             }
     
             .schedule-row {
@@ -61,14 +98,14 @@
             }
     
             .schedule-column {
-                background: rgba(255, 255, 255, 0.2);
+                background: rgba(255, 255, 255, 0.5);
                 border-radius: 30px;
                 padding: 40px;
                 width: 130px;
             }
     
             .day-name {
-                background: rgba(255, 255, 255, 0.8);
+                background: rgba(255, 255, 255, 0.562);
                 color: black;
                 border-radius: 20px;
                 padding: 15px 15px;
@@ -129,7 +166,7 @@
         <!— Верхний ряд с тремя днями —>
         <div class="schedule-row">
             <div class="schedule-column">
-                <div class="day-name">Понедельник</div>
+                <div class="day-name">понедельник</div>
                 <div class="lesson">
                     <div class="lesson-number">1 кабинет 4.5</div>
                     <div class="lesson-info">ОКР. МИР
@@ -147,7 +184,7 @@
                 </div>
             </div>
             <div class="schedule-column">
-                <div class="day-name">Вторник</div>
+                <div class="day-name">вторник</div>
                 <div class="lesson">
                     <div class="lesson-number">1 кабинет 4.5</div>
                     <div class="lesson-info">Литература
@@ -165,7 +202,7 @@
                 </div>
             </div>
             <div class="schedule-column">
-                <div class="day-name">Среда</div>
+                <div class="day-name">среда</div>
                 <div class="lesson">
                     <div class="lesson-number">1 кабинет 4.5</div>
                     <div class="lesson-info">Литература
@@ -186,7 +223,7 @@
         <!— Нижний ряд с двумя днями —>
         <div class="schedule-row">
             <div class="schedule-column">
-                <div class="day-name">Четверг</div>
+                <div class="day-name">четверг</div>
                 <div class="lesson">
                     <div class="lesson-number">1 кабинет 1.1</div>
                     <div class="lesson-info">Русский язык
@@ -199,7 +236,7 @@
                 </div>
             </div>
             <div class="schedule-column">
-                <div class="day-name">Пятница</div>
+                <div class="day-name">пятница</div>
                 <div class="lesson">
                     <div class="lesson-number">1 кабинет 2.2</div>
                     <div class="lesson-info">ОКР. МИР
@@ -215,10 +252,10 @@
 
         <!— Кнопки навигации —>
         <div class="navigation">
-            <form action="news.html">
-            <button class="button">Предыдущий день</button></form>
-            <form action="news.html">
-            <button class="button">Следующий день</button>
+            <form action="#">
+            <button class="button">предыдущий день</button></form>
+            <form action="#">
+            <button class="button">следующий день</button>
         </form>
         </div>
     </main>

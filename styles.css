@@ -283,7 +283,7 @@
     .school-goal h2 {
     font-size: 28px;
     margin-bottom: 10px;
-    padding-right: 1300px;
+    padding-right: 100px;
     }
     
     .school-goal p {
@@ -525,7 +525,7 @@
 }
 
 .eventz-info {
-  margin-left: 80px; /* Отступ, чтобы текст не заходил за иконку */
+  margin-left: 150px; /* Отступ, чтобы текст не заходил за иконку */
   z-index: 2;
 }
 
@@ -548,7 +548,7 @@
   background: #ff6b00;
   color: #fff;
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 17px;
   text-decoration: none;
 }
 
@@ -926,3 +926,180 @@
   background: #ffffff91;
 }
 
+/* Скрытое окно */
+.hidden {
+  display: none;
+}
+
+
+
+/* Окна */
+.class-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  display: none; /* По умолчанию скрыты */
+}
+
+/* Показ окна */
+.class-window.visible {
+  display: block;
+}
+
+
+
+
+
+/* Затемнение фона */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 900;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease; /* Плавное затемнение */
+}
+
+#overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Окна */
+.form-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8); /* Плавное появление */
+  width: 300px;
+  background: #ebf3ff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  padding: 35px;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.form-window.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1); /* Увеличение к реальным размерам */
+  pointer-events: auto;
+}
+
+/* Социальные кнопки */
+.social-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.social-btn:hover {
+  background: #0056b3;
+}
+
+/* Поля ввода */
+.form-input {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 10px auto;
+  padding: 13px;
+  border-radius: 52px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Кнопка формы */
+.form-btn {
+  display: block;
+  margin-left: 100px;
+  width: 35%;
+  padding: 10px;
+  border-radius: 30px;
+  background: #394b6a;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-btn:hover {
+  background: #273041;
+}
+
+
+
+/* Социальные кнопки */
+.social-buttons {
+  display: flex;
+  flex-direction: column; /* Кнопки в столбик */
+  align-items: center;
+  gap: 15px; /* Отступ между кнопками */
+  margin: 20px 0; /* Отступ от остальных элементов */
+}
+
+.social-icon {
+  width: 250px; /* Размер изображения */
+  height: 60px; /* Делаем его квадратным */
+  border-radius: 50px; /* Закругляем до круга */
+  transition: transform 0.3s ease;
+  cursor: pointer; /* Указатель при наведении */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Увеличение при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Увеличение тени */
+}
+
+.reg-log-text {
+  color: black;
+}
+
+.reg-log-subtext {
+  color: rgba(128, 128, 128, 0.801);
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Кнопка формы */
+.form-btn2 {
+  display: block;
+  margin-left: 70px;
+  width: 55%;
+  padding: 10px;
+  border-radius: 30px;
+  background: #394b6a;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-btn2:hover {
+  background: #273041;
+}

@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>МБОУ СОШ №3 г. Канск</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МБОУ СОШ №3 г. Канск</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <script src="script.js"></script>
-<header class="header">
-<div class="header-logo">
-<a href="index.html">
-<img src="img/logo.png.png" alt="Логотип школы">
-</a>
-<span><b>МБОУ Средняя Общеобразовательная Школа №3</b>
-<br>г. Канск, Красноярский край</span>
+    <header class="header">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/logo.png.png" alt="Логотип школы">
+            </a>
+            <span><b>МБОУ Средняя Общеобразовательная Школа №3</b> <br>г. Канск, Красноярский край</span>
+        </div>
+        <div class="header-buttons">
+            <button id="open-login" class="btn">Вход</button>
+            <button id="open-register" class="btn">Регистрация</button>
+        </div>
+    </header>
+
+    <!-- Затемнение фона -->
+    <div id="overlay"></div>
+
+    <!-- Форма входа -->
+    <div id="login-form" class="form-window">
+        <h2 class="reg-log-text"><b>ВОЙТИ</b></h2>
+        <p class="reg-log-subtext">через социальные сети</p>
+        <!-- Социальные кнопки в форме регистрации -->
+<div class="social-buttons">
+    <a href="#"><img class="social-icon" src="img/gosuslugi.png.png" alt="Госуслуги"></a>
+    <a href="#"><img class="social-icon" src="img/odnoklassniki.png.png" alt="Одноклассники"></a>
+    <a href="#"><img class="social-icon" src="img/vkontake-log-reg.png.png" alt="ВКонтакте"></a>
+    <p class="reg-log-subtext">с паролем</p>
 </div>
-<div class="header-buttons">
-<button class="btn">Вход</button>
-<button class="btn">Регистрация</button>
+        <input class="form-input" type="email" placeholder="Электронная почта">
+        <input class="form-input" type="password" placeholder="Пароль">
+        <button class="form-btn"><b>Вход</b></button>
+    </div>
+
+    <!-- Форма регистрации -->
+    <div id="register-form" class="form-window">
+        <h2 class="reg-log-text"><b>ЗАРЕГИСТРИРОВАТЬСЯ</b></h2>
+        <p class="reg-log-subtext">через социальные сети</p>
+        <!-- Социальные кнопки в форме регистрации -->
+<div class="social-buttons">
+    <a href="#"><img class="social-icon" src="img/gosuslugi.png.png" alt="Госуслуги"></a>
+    <a href="#"><img class="social-icon" src="img/odnoklassniki.png.png" alt="Одноклассники"></a>
+    <a href="#"><img class="social-icon" src="img/vkontake-log-reg.png.png" alt="ВКонтакте"></a>
+    <p class="reg-log-subtext">с паролем</p>
 </div>
-</header>
+        <input class="form-input" type="email" placeholder="Электронная почта">
+        <input class="form-input" type="password" placeholder="Пароль">
+        <input class="form-input" type="password" placeholder="Подтвердите пароль">
+        <button class="form-btn2"><b>Регистрация</b></button>
+    </div>
+    <script src="script2.js"></script>
 <nav class="nav">
     <ul>
     <li><a href="index.html">Главная</a></li>
@@ -35,7 +71,6 @@
     <main class="news-page">
       <!— Заголовок вне слайдера —>
       <h2 class="news-title">Новости</h2>
-      
       <!— Контейнер со слайдами —>
       <div class="news-slider">
         <!— Первый слайд —>
@@ -67,7 +102,7 @@
           <img src="img/news2.png.png" alt="Новость 2" class="news-image">
           <div class="news-content">
             <div class="news-header">
-              <h3>Заголовок новости 2</h3>
+              <h3>Заголовок новости 3</h3>
               <span class="news-date">13.06.2024 14:30</span>
             </div>
             <p>Краткий текст второй новости. Дополнительная информация для заинтересованных читателей.</p>
@@ -79,7 +114,7 @@
           <img src="img/news4.png" alt="Новость 2" class="news-image">
           <div class="news-content">
             <div class="news-header">
-              <h3>Заголовок новости 2</h3>
+              <h3>Заголовок новости 4</h3>
               <span class="news-date">13.06.2024 14:30</span>
             </div>
             <p>Краткий текст второй новости. Дополнительная информация для заинтересованных читателей.</p>
@@ -91,7 +126,7 @@
           <img src="img/news6.png" alt="Новость 2" class="news-image">
           <div class="news-content">
             <div class="news-header">
-              <h3>Заголовок новости 2</h3>
+              <h3>Заголовок новости 5</h3>
               <span class="news-date">13.06.2024 14:30</span>
             </div>
             <p>Краткий текст второй новости. Дополнительная информация для заинтересованных читателей.</p>
@@ -103,7 +138,7 @@
           <img src="img/news7.png" alt="Новость 2" class="news-image">
           <div class="news-content">
             <div class="news-header">
-              <h3>Заголовок новости 2</h3>
+              <h3>Заголовок новости 6</h3>
               <span class="news-date">13.06.2024 14:30</span>
             </div>
             <p>Краткий текст второй новости. Дополнительная информация для заинтересованных читателей.</p>
@@ -115,7 +150,7 @@
           <img src="img/news5.png" alt="Новость 3" class="news-image">
           <div class="news-content">
             <div class="news-header">
-              <h3>Заголовок новости 3</h3>
+              <h3>Заголовок новости 7</h3>
               <span class="news-date">14.06.2024 09:15</span>
             </div>
             <p>Описание третьей новости. Событие, которое важно знать всем заинтересованным пользователям.</p>
